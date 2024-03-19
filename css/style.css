@@ -132,15 +132,60 @@ hr {
     gap: 24px;
 }
 
-footer .fix-form-main {
+.form-table form {
+    gap: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
 
-    position: fixed;
+.form-table input {
+    width: 100%;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.form-table select {
+    gap: 14px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.form-table textarea {
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.form-table button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+/* footer fix-form */
+.fix-form-main {
+    position: absolute;
     top: 170px;
     right: 101px;
 }
+
 footer .fix-form {
     padding: 25px;
 }
+
 footer .fix-form p {
     font-size: 13px;
     color: #b3b3b3;
@@ -165,7 +210,7 @@ footer .fix-form-main a {
 }
 
 footer .fix-form button {
-    
+
     border: none;
     width: 100%;
     padding: 10px;
