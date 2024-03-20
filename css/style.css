@@ -94,9 +94,11 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
 .forms form textarea {
     resize: none;
 }
+
 .head-tovar {
     margin-bottom: 50px;
     display: flex;
@@ -147,55 +149,54 @@ hr {
     gap: 24px;
 }
 
-.form-table form {
-    gap: 10px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    width: 330px;
-}
-
-.form-table input {
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 3px;
-    background-color: #fff;
-}
-
-.form-table select {
-    gap: 14px;
+/* table 04 */
+table tr td input {
     width: 100%;
     padding: 10px;
     border-radius: 3px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
 }
 
-.form-table textarea {
+table tr td select {
+    width: 100%;
+    padding: 10px;
     border-radius: 3px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
 }
 
-.fix-form [type="checkbox"] {
-    width: unset;
+table tr td input[type="file"] {
+    border-radius: 3px;
+    background-color: #3e6aff;
 }
 
-.form-table button {
+table tr td button {
     border: none;
     width: 100%;
     padding: 10px;
     border-radius: 3px;
     background-color: #12d661;
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
 }
 
+table tr td input[type="radio"] {
+    
+    width: fit-content;
+}
+
+/* table 04 end */
+
 /* footer fix-form */
+
+.fix-form [type="checkbox"] {
+    width: unset;
+}
+
 .fix-form-main {
     z-index: 1;
     position: fixed;
@@ -205,6 +206,7 @@ hr {
 
 footer .fix-form {
     padding: 25px;
+    background-color: #fafafa;
 }
 
 footer .fix-form p {

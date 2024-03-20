@@ -20,12 +20,13 @@
             <div class="forms">
                 <form action="" method="post">
                     <h2>01. проста форма</h2>
-                    <label for="text"><input type="text"></label>
-                    <label for="text"><input type="text"></label>
+
+                    <label for="text"><input type="text" placeholder="Введіть ім’я"></label>
+                    <label for="text"><input type="text" placeholder="Email"></label>
                     <select>
                         <option>Ваше місто
                     </select></option>
-                    <textarea name="name" id="input" cols="30" rows="5"></textarea>
+                    <textarea name="name" id="input" cols="30" rows="5"> </textarea>
                     <label for="text"><button>Зареєструватися</button></label>
                 </form>
 
@@ -65,34 +66,50 @@
 
         </header>
         <main>
-            <div class="style-checkbox">
-                <h3>03. стилізовані чекбокси </h3>
-                <div class="gender-selection">
-                    <p>Чоловік</p>
-                    <p>Жінка</p>
-                </div>
-            </div>
-            <div class="form-table">
-                <form method="post">
-                    <h3>04. форма таблицею</h3>
-                    <p>Заповніть усі необхідні поля</p>
-                    <div class="form-table-info">
-                        <label for="text">ФІО:<input type="text"></label>
-                        <label for="text">Пароль:<input type="text"></label>
-                        <select>Місто:<option>Хмельницький</select></option>
-                        <label for="text">Стать:<input type="radio" name="gender">Чоловік
-                            <input type="radio">Жінка</label>
-                        <label for="text"><input type="file">Виберіть файл</label>
-                        <textarea name="" id="" cols="44" rows="10"></textarea>
-                        <button>Зареєструватися</button>
-                    </div>
-                </form>
-            </div>
 
+            <table>
 
+                <tr>
+                    <td><label for="">ФІО:</label></td>
+                    <td><label for=""><input type="text" placeholder="Введіть ім’я"></label></td>
+                </tr>
 
+                <tr>
+                    <td><label for="">Пароль:</label></td>
+                    <td><label for=""><input type="text" placeholder="Введіть не менше 6 символів"></label></td>
+                </tr>
+                <tr>
+                    <td><label for="">Місто:</label></td>
+                    <td><select>
+                            <option>Хмельницький
+                        </select></option>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Стать:</label></td>
+                    
+                    <td><label for=""><input type="radio">Чоловік</label></td>
+                    <td><label for=""><input type="radio">Жінка</label></td>
+
+                </tr>
+                <tr class="choose-file">
+                    <td><label for="">Фото:</label></td>
+                    <td><label for="file"><input type="file" id="file" name="Виберіть файл"></label></td>
+                </tr>
+                <tr>
+                    <td><label for="">Коментарій:</label></td>
+                    <td><textarea name="textarea" id="textarea" cols="40" rows="10"
+                            placeholder="Введіть текст повідомлення"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><label for="text"><button>Зареєструватися</button></label></td>
+                </tr>
+            </table>
         </main>
         <footer>
+            <div class="form-table"></div>
             <div class="fix-form-main">
                 <h2>06. фіксована форма</h2>
                 <form class="fix-form" action="" method="post">
