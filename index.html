@@ -21,13 +21,13 @@
                 <form action="" method="post">
                     <h2>01. проста форма</h2>
 
-                    <label for="text"><input type="text" placeholder="Введіть ім’я"></label>
-                    <label for="text"><input type="text" placeholder="Email"></label>
-                    <select>
-                        <option>Ваше місто
-                    </select></option>
+                    <label><input type="text" placeholder="Введіть ім’я"></label>
+                    <label><input type="text" placeholder="Email"></label>
+                    <select name="city">
+                        <option value="city">Ваше місто</option>
+                    </select>
                     <textarea name="name" id="input" cols="30" rows="5"> </textarea>
-                    <label for="text"><button>Зареєструватися</button></label>
+                    <label for="text"><button type="submit">Зареєструватися</button></label>
                 </form>
 
 
@@ -52,13 +52,13 @@
                 <div class="box-element">
                     <div class="tovar">
                         <p>Статус</p>
-                        <label for=""><input type="checkbox">Новинки</label>
-                        <label for=""><input type="checkbox">Акційні товари</label>
-                        <label for=""><input type="checkbox">Розпродаж</label>
+                        <label for="newss"><input type="checkbox" id="newss">Новинки</label>
+                        <label for="promotional"><input type="checkbox" id="promotional">Акційні товари</label>
+                        <label for="sale"><input type="checkbox" id="sale">Розпродаж</label>
                     </div>
                     <div class="date">
                         <p>Дата</p>
-                        <label for="date"><input type="date"></label>
+                        <label for="date"><input type="date" id="date"></label>
                     </div>
                 </div>
             </form>
@@ -68,23 +68,24 @@
         <main>
 
             <table>
-
+                <h2>04. форма таблицею</h2>
                 <tr>
-                    <td><label class="form-styles" for="">ФІО:</label></td>
-                    <td><label for=""><input type="text" placeholder="Введіть ім’я"></label></td>
+                    <td><label class="form-styles" for="fio">ФІО:</label></td>
+                    <td><label for="names"><input type="text" id="fio" placeholder="Введіть ім’я"></label></td>
                 </tr>
 
                 <tr>
-                    <td><label class="form-styles" for="">Пароль:</label></td>
-                    <td><label for=""><input type="text" placeholder="Введіть не менше 6 символів"></label></td>
+                    <td><label class="form-styles" for="password">Пароль:</label></td>
+                    <td><label for="limit-text"><input type="text" id="password"
+                                placeholder="Введіть не менше 6 символів"></label></td>
                 </tr>
                 <tr>
                     <td>
-                        <label class="form-styles" for="">Місто:</label>
+                        <label class="form-styles" for="city">Місто:</label>
                     </td>
                     <td><select>
-                            <option>Хмельницький
-                        </select></option>
+                            <option>Хмельницький</option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
@@ -95,12 +96,12 @@
 
                 </tr>
                 <tr class="choose-file">
-                    <td><label class="form-styles" for="">Фото:</label></td>
-                    <td><label for="file"><input type="file" id="file" name="Виберіть файл"></label></td>
+                    <td><label class="form-styles" for="foto">Фото:</label></td>
+                    <td><label for="file"><input type="file" id="foto" name="Виберіть файл"></label></td>
                 </tr>
                 <tr>
-                    <td><label class="form-styles" for="">Коментарій:</label></td>
-                    <td><textarea name="textarea" id="textarea" cols="40" rows="10"
+                    <td><label class="form-styles" for="comment">Коментарій:</label></td>
+                    <td><textarea name="textarea" id="comment" cols="40" rows="10"
                             placeholder="Введіть текст повідомлення"></textarea></td>
                 </tr>
 
@@ -110,6 +111,7 @@
                 </tr>
             </table>
         </main>
+
         <footer>
             <div class="form-table-info">
                 <div class="form-info">
@@ -156,7 +158,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="3"><label class="rules" for=""><input type="checkbox">Я погоджуюсь з правилами оплати та доставки товару</label></td>
+                                <td colspan="3"><label class="rules" for=""><input type="checkbox">Я погоджуюсь з
+                                        правилами оплати та доставки товару</label></td>
                             </tr>
                         </table>
                     </form>

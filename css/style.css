@@ -14,13 +14,14 @@ body {
 }
 
 .wrapper {
-    width: 960px;
+    max-width: 960px;
     margin: auto;
 }
-
+header {
+    padding-top: 77px;
+}
 /* h1,h2,h3 */
 h1 {
-    padding-top: 77px;
     text-align: center;
     margin-bottom: 70px;
 }
@@ -45,7 +46,7 @@ hr {
 .flex {
     display: flex;
 }
-
+/* forms01 */
 .forms form {
     gap: 10px;
     margin-bottom: 50px;
@@ -56,23 +57,23 @@ hr {
 
 .forms form input {
     width: 100%;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     padding: 10px;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .forms form select {
     padding: 10px;
     border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 .forms form textarea {
     border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 .forms form button {
@@ -82,21 +83,24 @@ hr {
     border-radius: 3px;
     background-color: #12d661;
     font-size: 14px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
 }
 
+
+.forms form textarea {
+    resize: none;
+}
+/* forms01 end */
+
+/* element02 */
 .head-tovar .radio-element,
 .checkbox-element {
     gap: 14px;
     display: flex;
     flex-direction: column;
-}
-
-.forms form textarea {
-    resize: none;
 }
 
 .head-tovar {
@@ -137,8 +141,8 @@ hr {
 .box-element .date input {
     padding: 15px;
     border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 .tovar {
@@ -151,31 +155,30 @@ hr {
     align-items: center;
     gap: 40px;
 }
-
+/* element02 end */
 /* table 04 */
 table {
     border-spacing: 15px;
-    ;
 }
 
 table tr td input {
-
     width: 100%;
     padding: 10px;
     border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 table tr td select {
     width: 100%;
     padding: 10px;
     border-radius: 3px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 table tr td input[type="file"] {
+    /* display: none;  */
     border-radius: 3px;
     background-color: #3e6aff;
 }
@@ -187,7 +190,7 @@ table tr td button {
     border-radius: 3px;
     background-color: #12d661;
     font-size: 14px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
@@ -202,16 +205,14 @@ table label[for="gender"],
     font-family: "Roboto";
 }
 
-table .male {
+
+
+.female,
+.male {
     margin: 9px;
 }
 
-table .female {
-    margin: 9px;
-}
-
-table tr td input[type="radio"] {
-
+table input[type="radio"] {
     width: fit-content;
 }
 
@@ -250,7 +251,6 @@ footer .form-table-info label {
 
 
 footer .form-table-info table {
-
     border-spacing: 9px;
     width: 100%;
 
@@ -298,7 +298,7 @@ footer .fix-form p {
 
 footer .fix-form-main input {
     width: 100%;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     padding: 10px;
     border-radius: 3px;
     background-color: #fff;
@@ -320,7 +320,7 @@ footer .fix-form button {
     border-radius: 3px;
     background-color: #12d661;
     font-size: 14px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
@@ -333,3 +333,4 @@ footer form {
     width: 330px;
     border: 1px solid #e6e6e6;
 }
+/* fix-form end */
