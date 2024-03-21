@@ -125,6 +125,9 @@ hr {
 }
 
 .box-element {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     padding: 20px;
     border-radius: 3px;
     background-color: #f7f7f7;
@@ -144,13 +147,19 @@ hr {
 }
 
 .date {
-    margin-bottom: 16px;
     display: flex;
-    gap: 24px;
+    align-items: center;
+    gap: 40px;
 }
 
 /* table 04 */
+table {
+    border-spacing: 15px;
+    ;
+}
+
 table tr td input {
+
     width: 100%;
     padding: 10px;
     border-radius: 3px;
@@ -184,12 +193,83 @@ table tr td button {
     text-align: center;
 }
 
+
+
+table label[for="gender"],
+.form-styles {
+    font-size: 14px;
+    color: #1f222c;
+    font-family: "Roboto";
+}
+
+table .male {
+    margin: 9px;
+}
+
+table .female {
+    margin: 9px;
+}
+
 table tr td input[type="radio"] {
-    
+
     width: fit-content;
 }
 
 /* table 04 end */
+
+
+/* table 05 */
+footer .form-table-info p {
+    margin-bottom: 22px;
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+footer .form-table-info .contacts {
+    margin-bottom: 29px;
+}
+
+footer .form-table-info hr {
+    margin-bottom: 25px;
+}
+
+footer .form-table-info form {
+
+    border: none;
+    width: 75%;
+}
+
+footer .form-table-info label {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-family: "Roboto";
+}
+
+
+
+footer .form-table-info table {
+
+    border-spacing: 9px;
+    width: 100%;
+
+}
+
+footer .rules input[type="checkbox"] {
+    margin-right: 9px;
+    display: inline;
+    width: fit-content;
+}
+
+footer .form-table-info .rules {
+    font-size: 14px;
+    color: #1f222c;
+    font-family: "Roboto";
+}
+
+/* table 05 end */
+
 
 /* footer fix-form */
 

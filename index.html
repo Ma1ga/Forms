@@ -70,34 +70,36 @@
             <table>
 
                 <tr>
-                    <td><label for="">ФІО:</label></td>
+                    <td><label class="form-styles" for="">ФІО:</label></td>
                     <td><label for=""><input type="text" placeholder="Введіть ім’я"></label></td>
                 </tr>
 
                 <tr>
-                    <td><label for="">Пароль:</label></td>
+                    <td><label class="form-styles" for="">Пароль:</label></td>
                     <td><label for=""><input type="text" placeholder="Введіть не менше 6 символів"></label></td>
                 </tr>
                 <tr>
-                    <td><label for="">Місто:</label></td>
+                    <td>
+                        <label class="form-styles" for="">Місто:</label>
+                    </td>
                     <td><select>
                             <option>Хмельницький
                         </select></option>
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="">Стать:</label></td>
-                    
-                    <td><label for=""><input type="radio">Чоловік</label></td>
-                    <td><label for=""><input type="radio">Жінка</label></td>
+                    <td><label class="form-styles" for="gender">Стать:</label></td>
+
+                    <td><label for="gender"><input class="male" id="gender" type="radio">Чоловік</label>
+                        <label for="gender"> <input class="female" id="gender" type="radio">Жінка</label></td>
 
                 </tr>
                 <tr class="choose-file">
-                    <td><label for="">Фото:</label></td>
+                    <td><label class="form-styles" for="">Фото:</label></td>
                     <td><label for="file"><input type="file" id="file" name="Виберіть файл"></label></td>
                 </tr>
                 <tr>
-                    <td><label for="">Коментарій:</label></td>
+                    <td><label class="form-styles" for="">Коментарій:</label></td>
                     <td><textarea name="textarea" id="textarea" cols="40" rows="10"
                             placeholder="Введіть текст повідомлення"></textarea></td>
                 </tr>
@@ -109,6 +111,57 @@
             </table>
         </main>
         <footer>
+            <div class="form-table-info">
+                <div class="form-info">
+                    <h2>05. форма таблицею</h2>
+                    <p>Оформлення заявки</p>
+                    <form class="" action="" method="post">
+                        <table>
+                            <tr class="contacts">
+                                <td><label for="">Прізвище та ім’я</label>
+                                    <label for=""><input class="contacts" type="text"></label>
+                                </td>
+                                <td><label for="">Ел. пошта</label>
+                                    <label for=""><input class="contacts" type="text"></label>
+                                </td>
+                                <td><label for="">Телефон</label>
+                                    <label for=""><input class="contacts" type="text"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Країна</label>
+                                    <select name="" id="">
+                                        <option value="">Індонезія</option>
+                                        <option value=""></option>
+                                    </select></td>
+                                <td colspan="2">
+                                    <label for="">Адреса</label>
+                                    <label for=""><input type="text"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Місто</label>
+                                    <label for=""><input type="text"></label>
+                                </td>
+                                <td><label for="">Місто</label>
+                                    <label for=""><input type="text"></label>
+                                </td>
+                                <td><label for="">Поштовий індекс</label>
+                                    <label for=""><input type="text"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><label class="rules" for=""><input type="checkbox">Я погоджуюсь з правилами оплати та доставки товару</label></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
             <div class="form-table"></div>
             <div class="fix-form-main">
                 <h2>06. фіксована форма</h2>
