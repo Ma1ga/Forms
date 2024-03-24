@@ -17,9 +17,11 @@ body {
     max-width: 960px;
     margin: auto;
 }
+
 header {
     padding-top: 77px;
 }
+
 /* h1,h2,h3 */
 h1 {
     text-align: center;
@@ -46,6 +48,7 @@ hr {
 .flex {
     display: flex;
 }
+
 /* forms01 */
 .forms form {
     gap: 10px;
@@ -93,6 +96,7 @@ hr {
 .forms form textarea {
     resize: none;
 }
+
 /* forms01 end */
 
 /* element02 */
@@ -155,8 +159,16 @@ hr {
     align-items: center;
     gap: 40px;
 }
+
 /* element02 end */
 /* table 04 */
+ main p {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
 table {
     border-spacing: 15px;
 }
@@ -191,7 +203,6 @@ table tr td button {
     background-color: #12d661;
     font-size: 14px;
     color: #fff;
-    font-weight: 700;
     font-family: "Roboto";
     text-align: center;
 }
@@ -268,6 +279,37 @@ footer .form-table-info .rules {
     font-family: "Roboto";
 }
 
+.acceptance-form {
+    display: flex;
+    flex-direction: row;
+    gap: 390px;
+}
+
+.cancel label button {
+    border: 1px solid #85868d;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.accept label button {
+
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
 /* table 05 end */
 
 
@@ -333,4 +375,5 @@ footer form {
     width: 330px;
     border: 1px solid #e6e6e6;
 }
+
 /* fix-form end */
