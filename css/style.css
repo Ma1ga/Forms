@@ -50,6 +50,12 @@ hr {
 }
 
 /* forms01 */
+.forms input[type="text"]:focus {
+    outline: none;
+    filter: drop-shadow(0 0 2.5px rgba(62, 106, 255, 0.55));
+    border: 1px solid #3e6aff;
+}
+
 .forms form {
     gap: 10px;
     margin-bottom: 50px;
@@ -66,6 +72,10 @@ hr {
     background-color: #fff;
 }
 
+.forms select:focus {
+    border: 1px solid #3e6aff;
+}
+
 .forms form select {
     padding: 10px;
     border-radius: 3px;
@@ -74,6 +84,7 @@ hr {
 }
 
 .forms form textarea {
+    height: 150px;
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -100,6 +111,56 @@ hr {
 /* forms01 end */
 
 /* element02 */
+.checkbox-element p {
+    position: relative;
+}
+
+.checkbox-element [type="checkbox"] {
+    display: none;
+}
+
+.checkbox-element label {
+    padding-left: 20px;
+}
+
+.checkbox-element label:before,
+label:after {
+
+    transition: 0.3s;
+
+}
+
+
+.checkbox-element label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+.checkbox-element input:checked+label::before {
+    border: 1px solid #3e6aff;
+}
+
+input:checked+label::after {
+    content: "";
+    height: 6px;
+    width: 8px;
+    border-bottom: 2px solid #244dd7;
+    border-left: 2px solid #244dd7;
+    transform: translateY(-60%) rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 4px;
+}
+
+
+
 .head-tovar .radio-element,
 .checkbox-element {
     gap: 14px;
@@ -161,8 +222,45 @@ hr {
 }
 
 /* element02 end */
+/* gender03 */
+form .gender input+label::after {
+    display: none;
+}
+
+.gender input {
+    display: none;
+}
+
+.gender input+label {
+    position: relative;
+    padding-left: 85px;
+}
+
+.gender input+label:before {
+    content: '';
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-image: url("../img/gender.png");
+}
+
+.gender input:checked+label[for="man"]::before {
+    background-position: 0px 72px;
+}
+
+.gender input+label[for="woman"]::before {
+    background-position: 72px 0px;
+}
+
+.gender input:checked+label[for="woman"]::before {
+    background-position: 72px 72px;
+}
+
+/* gender03 end */
 /* table 04 */
- main p {
+main p {
     font-size: 18px;
     color: #1f222c;
     font-weight: 700;
@@ -171,6 +269,12 @@ hr {
 
 table {
     border-spacing: 15px;
+}
+
+table input[type="text"]:focus {
+    outline: none;
+    filter: drop-shadow(0 0 2.5px rgba(62, 106, 255, 0.55));
+    border: 1px solid #3e6aff;
 }
 
 table tr td input {
@@ -190,10 +294,28 @@ table tr td select {
 }
 
 table tr td input[type="file"] {
-    /* display: none;  */
-    border-radius: 3px;
-    background-color: #3e6aff;
+    display: none;
+
 }
+
+table label {
+    cursor: pointer;
+}
+
+table [type="file"]+label {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #2857f4;
+    border-radius: 3px;
+    background-color: #2857f4;
+    padding: 15px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+}
+
 
 table tr td button {
     border: none;
@@ -253,13 +375,18 @@ footer .form-table-info form {
     width: 75%;
 }
 
+
 footer .form-table-info label {
     font-size: 13px;
     color: #b3b3b3;
     font-family: "Roboto";
 }
 
-
+footer input[type="text"]:focus {
+    outline: none;
+    filter: drop-shadow(0 0 2.5px rgba(62, 106, 255, 0.55));
+    border: 1px solid #3e6aff;
+}
 
 footer .form-table-info table {
     border-spacing: 9px;
@@ -314,6 +441,11 @@ footer .form-table-info .rules {
 
 
 /* footer fix-form */
+.fix-form-main input[type="text"]:focus {
+    outline: none;
+    filter: drop-shadow(0 0 2.5px rgba(62, 106, 255, 0.55));
+    border: 1px solid #3e6aff;
+}
 
 .fix-form [type="checkbox"] {
     width: unset;
