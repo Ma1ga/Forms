@@ -153,10 +153,10 @@ input:checked+label::after {
     width: 8px;
     border-bottom: 2px solid #244dd7;
     border-left: 2px solid #244dd7;
-    transform: translateY(-60%) rotate(-45deg);
+    transform: translateY(-80%) rotate(-45deg);
     position: absolute;
     top: 50%;
-    left: 4px;
+    left: 3px;
 }
 
 
@@ -223,12 +223,27 @@ input:checked+label::after {
 
 /* element02 end */
 /* gender03 */
+
+.gender p {
+    padding: 3%;
+}
+
+.gender label {
+    padding: 30px;
+}
+
 form .gender input+label::after {
     display: none;
 }
 
 .gender input {
     display: none;
+}
+
+
+.gender label {
+    text-align: center;
+
 }
 
 .gender input+label {
@@ -246,7 +261,19 @@ form .gender input+label::after {
     background-image: url("../img/gender.png");
 }
 
+
+.gender label[for="man"]::before,
+.gender label[for="woman"]::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+}
+
+
 .gender input:checked+label[for="man"]::before {
+
     background-position: 0px 72px;
 }
 
@@ -256,6 +283,49 @@ form .gender input+label::after {
 
 .gender input:checked+label[for="woman"]::before {
     background-position: 72px 72px;
+}
+
+.checkbox-news p {
+    position: relative;
+}
+
+.checkbox-news [type="checkbox"] {
+    visibility: hidden;
+}
+
+.checkbox-news input+label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 25px;
+    border: 1px solid #cfcfd1;
+    border-radius: 50px;
+    background-color: #cfcfd1;
+
+}
+
+.checkbox-news input+label::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 11px;
+    left: 3px;
+}
+
+.checkbox-news input:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 11px;
+    left: 10px;
 }
 
 /* gender03 end */
@@ -448,6 +518,7 @@ footer .form-table-info .rules {
 }
 
 .fix-form [type="checkbox"] {
+    padding-left: 5px;
     width: unset;
 }
 
