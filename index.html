@@ -23,13 +23,14 @@
 
                     <label><input type="text" placeholder="Введіть ім’я"></label>
                     <label><input type="text" placeholder="Email"></label>
-                    <select name="city">
-                        <option value="city">Ваше місто</option>
-                        <option value="city">Київ</option>
-                        <option value="city">Львів</option>
-                        <option value="city">Хмельницький</option>
-
-                    </select>
+                    <label for="" class="arrows">
+                        <select name="city">
+                            <option value="city">Ваше місто</option>
+                            <option value="city">Київ</option>
+                            <option value="city">Львів</option>
+                            <option value="city">Хмельницький</option>
+                        </select>
+                    </label>
                     <textarea name="name" id="input" cols="30" rows="5"> </textarea>
                     <label for="text"><button type="submit">Зареєструватися</button></label>
                 </form>
@@ -42,9 +43,9 @@
                 <div class="nova-form">
                     <div class="radio-element">
 
-                        <label for=""><input type="radio" name="mail">Нова Пошта</label>
-                        <label for=""><input type="radio" name="mail">Кур’єр</label>
-                        <label for=""><input type="radio" name="mail">Самовивіз</label>
+                        <label for=""><input class="checkbox-style" type="radio" name="mail">Нова Пошта</label>
+                        <label for=""><input class="checkbox-style" type="radio" name="mail">Кур’єр</label>
+                        <label for=""><input class="checkbox-style" type="radio" name="mail">Самовивіз</label>
                     </div>
 
                     <div class="checkbox-element">
@@ -92,6 +93,7 @@
                         <p><input type="checkbox" id="buy-meat"><label for="buy-meat">Купити додому ковбаси</label></p>
                         <p><input type="checkbox" id="on-light"><label for="on-light">Включити світло</label></p>
                     </div>
+                </div>
             </form>
 
             <table>
@@ -112,9 +114,11 @@
                     <td>
                         <label class="form-styles" for="city">Місто:</label>
                     </td>
-                    <td><select>
-                            <option>Хмельницький</option>
-                        </select>
+                    <td> <label for="" class="arrows">
+                            <select>
+                                <option>Хмельницький</option>
+                            </select>
+                        </label>
                     </td>
                 </tr>
                 <tr>
@@ -166,10 +170,12 @@
                             </tr>
                             <tr>
                                 <td><label for="country">Країна</label>
-                                    <select name="" id="country">
-                                        <option value="">Індонезія</option>
-                                        <option value=""></option>
-                                    </select></td>
+                                    <label for="" >
+                                        <select name="" id="country">
+                                            <option value="">Індонезія</option>
+                                            <option value=""></option>
+                                        </select></label>
+                                </td>
                                 <td colspan="2">
                                     <label for="">Адреса</label>
                                     <label for=""><input type="text"></label>

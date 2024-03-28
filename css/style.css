@@ -107,6 +107,26 @@ hr {
 .forms form textarea {
     resize: none;
 }
+.arrows select {
+    appearance: none;
+    width: 100%;
+    background-color: transparent;
+}
+.arrows {
+    position: relative;
+    
+}
+
+.arrows::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-25%);
+    border: 5px solid transparent;
+    border-top-color: #000;
+}
 
 /* forms01 end */
 
@@ -147,7 +167,7 @@ label:after {
     border: 1px solid #3e6aff;
 }
 
-input:checked+label::after {
+input.checkbox-style:checked+label::after {
     content: "";
     height: 6px;
     width: 8px;
@@ -223,13 +243,27 @@ input:checked+label::after {
 
 /* element02 end */
 /* gender03 */
-
-.gender p {
-    padding: 3%;
+.gender,
+.checkbox-news {
+    display: flex;
+    flex-direction: column;
 }
 
-.gender label {
-    padding: 30px;
+.gender {
+    gap: 68px;
+}
+
+.checkbox-news {
+    gap: 32px;
+}
+
+
+.gender {
+    margin-bottom: 75px;
+}
+
+.checkbox-news label {
+    padding-left: 60px;
 }
 
 form .gender input+label::after {
@@ -242,13 +276,16 @@ form .gender input+label::after {
 
 
 .gender label {
-    text-align: center;
-
+    padding: 16px;
 }
 
 .gender input+label {
     position: relative;
     padding-left: 85px;
+}
+
+.gender input:checked+label {
+    color: #3e6aff;
 }
 
 .gender input+label:before {
@@ -293,16 +330,27 @@ form .gender input+label::after {
     visibility: hidden;
 }
 
+.gender-main {
+    display: flex;
+    justify-content: space-between;
+}
+
 .checkbox-news input+label::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -50%;
+    transform: translateY(50%);
     left: 0;
     width: 45px;
     height: 25px;
     border: 1px solid #cfcfd1;
     border-radius: 50px;
     background-color: #cfcfd1;
+    transition: 0.5s;
+}
+
+.checkbox-news input:checked+label::before {
+    background-color: #3e6aff;
 
 }
 
@@ -314,18 +362,14 @@ form .gender input+label::after {
     border-bottom: 1px solid #fff;
     background-color: #fff;
     border-radius: 11px;
+    transform: translateY(70%);
+    top: -50%;
     left: 3px;
 }
 
 .checkbox-news input:checked+label::after {
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
-    border-radius: 11px;
-    left: 10px;
+
+    left: 22px;
 }
 
 /* gender03 end */
