@@ -310,16 +310,15 @@ form .gender input+label::after {
 
 
 .gender input:checked+label[for="man"]::before {
-
-    background-position: 0px 72px;
+    background-position: 1px 70px;
 }
 
 .gender input+label[for="woman"]::before {
-    background-position: 72px 0px;
+    background-position: 71px 0px;
 }
 
 .gender input:checked+label[for="woman"]::before {
-    background-position: 72px 72px;
+    background-position: 72px 70px;
 }
 
 .checkbox-news p {
