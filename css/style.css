@@ -134,7 +134,9 @@ hr {
 .checkbox-element p {
     position: relative;
 }
-
+.disabled{
+    color: #b3b3b3;
+}
 .checkbox-element [type="checkbox"] {
     display: none;
 }
@@ -331,7 +333,7 @@ form .gender input+label::after {
 
 .gender-main {
     display: flex;
-    justify-content: space-between;
+    column-gap: 30%;
 }
 
 .checkbox-news input+label::before {
@@ -568,8 +570,9 @@ footer .form-table-info .rules {
 .fix-form-main {
     z-index: 1;
     position: fixed;
-    top: 170px;
-    right: 101px;
+    width: 245px;
+    right: 10%;
+    top: 175px;
 }
 
 footer .fix-form {
