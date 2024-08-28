@@ -31,7 +31,7 @@
                             <option value="city">Хмельницький</option>
                         </select>
                     </label>
-                    <textarea name="name" id="input" cols="30" rows="5"> </textarea>
+                    <textarea name="name" id="input" class="email-form" cols="30" rows="5"> Email</textarea>
                     <label for="text"><button type="submit">Зареєструватися</button></label>
                 </form>
 
@@ -45,7 +45,7 @@
 
                         <label for=""><input class="checkbox-style" type="radio" name="mail">Нова Пошта</label>
                         <label for=""><input class="checkbox-style" type="radio" name="mail">Кур’єр</label>
-                        <label for=""><input class="checkbox-style disabled" type="radio" name="mail" disabled>Самовивіз</label>
+                        <label for="" class="disabled"><input class="checkbox-style disabled" type="radio" name="mail" disabled>Самовивіз</label>
                     </div>
 
                     <div class="checkbox-element">
@@ -54,7 +54,7 @@
                                 договору</label></p>
                         <p><input class="checkbox-style" type="checkbox" id="news-bank"><label for="news-bank">Згідний з
                                 ПДВ 9%</label></p>
-                        <p><input class="checkbox-style disabled" type="checkbox" disabled id="news-mail"><label class="transpency"
+                        <p><input class="checkbox-style disabled" type="checkbox" disabled id="news-mail"><label class="transpency disabled"
                                 for="news-mail" >Отримувати новини на ел.пошту</label></p>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                 <div class="checkbox-element box-element">
 
                     <div class="tovar">
-                        <p>Статус</p>
+                        <p class="date-status">Статус</p>
                         <p><input class="checkbox-style" type="checkbox" id="newss"><label for="newss">Новинки</label>
                         </p>
                         <p><input class="checkbox-style" type="checkbox" id="action"><label for="action">Акційні
@@ -72,7 +72,7 @@
 
                     </div>
                     <div class="date">
-                        <p>Дата</p>
+                        <p class="date-status">Дата</p>
                         <label for="date"><input type="date" id="date"></label>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                 </tr>
                 <tr>
                     <td><label class="form-styles" for="comment">Коментарій:</label></td>
-                    <td><textarea name="textarea" id="comment" cols="40" rows="10"
+                    <td><textarea name="textarea" class="message" id="comment" cols="40" rows="10"
                             placeholder="Введіть текст повідомлення"></textarea></td>
                 </tr>
 
@@ -144,7 +144,7 @@
                 </tr>
             </table>
         </main>
-
+        <hr>
         <footer>
             <div class="form-table-info">
                 <div class="form-info">
@@ -225,7 +225,7 @@
                     <p>Пароль</p>
                     <label for="text"><input type="text"></label>
                     <a href="#">Забули пароль?</a>
-                    <label for="text"><input type="checkbox">Запам’ятати пароль</label>
+                    <label for="text" class="failed-password"><input type="checkbox">Запам’ятати пароль</label>
                     <button>Увійти</button>
                 </form>
             </div>
