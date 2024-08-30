@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper {
-    max-width: 960px;
+    width: 80%;
     margin: auto;
 }
 
@@ -26,6 +26,10 @@ header {
 h1 {
     text-align: center;
     margin-bottom: 70px;
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 h2,
@@ -41,7 +45,7 @@ h3 {
 
 /* h1,h2,h3 end*/
 hr {
-
+    border-bottom: none;
     margin-bottom: 50px;
 }
 
@@ -103,7 +107,10 @@ hr {
     font-family: "Roboto";
     text-align: center;
 }
-
+.forms form button:hover{
+    filter: drop-shadow(2px 4px 6px green);
+    transition: 0.5s;
+}
 
 .forms form textarea {
     resize: none;
@@ -179,8 +186,36 @@ input.checkbox-style:checked+label::after {
     transform: translateY(-80%) rotate(-45deg);
     position: absolute;
     top: 50%;
-    left: 3px;
+    left: 3.5px;
 }
+.radio-element input[type="radio"] {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border-radius: 50%;
+    border: 2px solid #2196F3;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.radio-element input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #2196F3;
+    border: 2px solid #ffffff;
+}
+
+
 
 
 
@@ -260,6 +295,37 @@ input.checkbox-style:checked+label::after {
 .gender {
     gap: 68px;
 }
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    outline: none;
+    cursor: pointer;
+    padding: 6px;
+    margin: 0px;
+}
+
+input[type="radio"]:checked {
+    border: 2px solid #1E90FF;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: #1E90FF;
+    border-radius: 50%;
+}
+
 
 .checkbox-news {
     gap: 32px;
@@ -305,7 +371,12 @@ form .gender input+label::after {
     left: 0;
     background-image: url("../img/gender.png");
 }
-
+.decor {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
 
 .gender label[for="man"]::before,
 .gender label[for="woman"]::before {
@@ -315,7 +386,12 @@ form .gender input+label::after {
     left: 0;
 
 }
-
+.gendes {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
 
 .gender input:checked+label[for="man"]::before {
     background-position: 1px 70px;
@@ -392,7 +468,10 @@ table {
     margin-bottom: 35px;
     border-spacing: 15px;
 }
-
+table [type="file"]+label:hover{
+    filter: drop-shadow(2px 4px 6px rgb(64, 65, 64));
+    transition: 0.5s;
+}
 table input[type="text"]:focus {
     outline: none;
     filter: drop-shadow(0 0 2.5px rgba(62, 106, 255, 0.55));
@@ -426,6 +505,7 @@ table tr td select {
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #ccc;
+    appearance: none;
 }
 
 table tr td input[type="file"] {
@@ -462,6 +542,10 @@ table tr td button {
     color: #fff;
     font-family: "Roboto";
     text-align: center;
+}
+table tr td button:hover{
+    filter: drop-shadow(2px 4px 6px green);
+    transition: 0.5s;
 }
 
 
@@ -507,7 +591,7 @@ footer .form-table-info hr {
 footer .form-table-info form {
 
     border: none;
-    width: 75%;
+    width: 65%;
 }
 
 
@@ -544,7 +628,15 @@ footer .form-table-info .rules {
 .acceptance-form {
     display: flex;
     flex-direction: row;
-    gap: 390px;
+    gap: 335px;
+}
+.acceptance-form .cancel button:hover{
+    filter: drop-shadow(2px 4px 6px rgb(64, 65, 64));
+    transition: 0.5s;
+}
+.acceptance-form .accept button:hover{
+    filter: drop-shadow(2px 4px 6px green);
+    transition: 0.5s;
 }
 
 .cancel label button {
@@ -590,7 +682,6 @@ footer .form-table-info .rules {
 .fix-form-main {
     z-index: 1;
     position: fixed;
-    width: 245px;
     right: 10%;
     top: 175px;
 }
@@ -625,7 +716,10 @@ footer .fix-form-main a {
     font-weight: 400;
     font-family: "Roboto";
 }
-
+footer .fix-form-main a:hover {
+    filter: drop-shadow(2px 4px 6px);
+    transition: 0.3;
+}
 footer .fix-form button {
 
     border: none;
@@ -647,5 +741,60 @@ footer form {
     width: 330px;
     border: 1px solid #e6e6e6;
 }
+/* Приховуємо стандартний чекбокс */
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Стиль контейнера */
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Квадрат для галочки */
+.custom-checkbox .checkbox-mark {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Стиль галочки при активному чекбоксі */
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-mark {
+    background-color: #3e6aff;
+    border-color: #3e6aff;
+}
+
+/* Стиль галочки (символ "✓") */
+.custom-checkbox .checkbox-mark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 1px;
+    top: -2px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(35deg);
+}
+
+/* Відображаємо галочку при активному чекбоксі */
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-mark::after {
+    display: block;
+}
+.fix-form-main .fix-form button:hover{
+    filter: drop-shadow(2px 4px 6px green);
+    transition: 0.5s;
+}
+
 
 /* fix-form end */

@@ -31,7 +31,7 @@
                             <option value="city">Хмельницький</option>
                         </select>
                     </label>
-                    <textarea name="name" id="input" class="email-form" cols="30" rows="5"> Email</textarea>
+                    <textarea name="name" id="input" class="email-form" cols="30" rows="5"  placeholder=" Email"></textarea>
                     <label for="text"><button type="submit">Зареєструватися</button></label>
                 </form>
 
@@ -42,11 +42,21 @@
             <form class="head-tovar" action="" method="post">
                 <div class="nova-form">
                     <div class="radio-element">
-
-                        <label for=""><input class="checkbox-style" type="radio" name="mail">Нова Пошта</label>
-                        <label for=""><input class="checkbox-style" type="radio" name="mail">Кур’єр</label>
-                        <label for="" class="disabled"><input class="checkbox-style disabled" type="radio" name="mail" disabled>Самовивіз</label>
+                        <label>
+                            <input class="checkbox-style" type="radio" name="mail">
+                            Нова Пошта
+                        </label>
+                        <label>
+                            <input class="checkbox-style" type="radio" name="mail">
+                            Кур’єр
+                        </label>
+                        <label class="disabled">
+                            <input class="checkbox-style" type="radio" name="mail" disabled>
+                            Самовивіз
+                        </label>
                     </div>
+                    
+                    
 
                     <div class="checkbox-element">
 
@@ -102,12 +112,12 @@
                 <p>Заповніть усі необхідні поля</p>
                 <tr>
                     <td><label class="form-styles" for="fio">ФІО:</label></td>
-                    <td><label for="names"><input type="text" id="fio" placeholder="Введіть ім’я"></label></td>
+                    <td><label for="names"><input type="text" class="decor" id="fio" placeholder="Введіть ім’я"></label></td>
                 </tr>
 
                 <tr>
                     <td><label class="form-styles" for="password">Пароль:</label></td>
-                    <td><label for="limit-text"><input type="text" id="password"
+                    <td><label for="limit-text"><input type="text" class="decor" id="password"
                                 placeholder="Введіть не менше 6 символів"></label></td>
                 </tr>
                 <tr>
@@ -123,17 +133,22 @@
                 </tr>
                 <tr>
                     <td><label class="form-styles" for="gender">Стать:</label></td>
-
-                    <td><label for="gender"><input class="male" id="gender" type="radio">Чоловік</label>
-                        <label for="gender"> <input class="female" id="gender" type="radio">Жінка</label></td>
-
+                    <td>
+                        <label for="gender-male" class="gendes">
+                            <input class="male" id="gender-male" type="radio" name="gender"> Чоловік
+                        </label>
+                        <label for="gender-female" class="gendes">
+                            <input class="female" id="gender-female" type="radio" name="gender"> Жінка
+                        </label>
+                    </td>
                 </tr>
+                
                 <tr class="choose-file">
                     <td><label class="form-styles" for="foto">Фото:</label></td>
-                    <td><input type="file" id="foto" name=""><label for="foto">Виберіть файл</label></td>
+                    <td><input type="file" id="foto" name=""><label for="foto" class="filer">Виберіть файл</label></td>
                 </tr>
                 <tr>
-                    <td><label class="form-styles" for="comment">Коментарій:</label></td>
+                    <td style="vertical-align: top;"><label class="form-styles" for="comment">Коментарій:</label></td>
                     <td><textarea name="textarea" class="message" id="comment" cols="40" rows="10"
                             placeholder="Введіть текст повідомлення"></textarea></td>
                 </tr>
@@ -219,13 +234,16 @@
             <div class="fix-form-main">
                 <h2>06. фіксована форма</h2>
                 <form class="fix-form" action="" method="post">
-
-                    <p>Логін</p>
-                    <label class="lab1" for="title"><input type="text"></label>
-                    <p>Пароль</p>
-                    <label for="text"><input type="text"></label>
+                    <label for="logins"><p>Логін</p></label>
+                    <label class="lab1" for="title"><input type="text" id="logins"></label>
+                    <label for="passwords"><p>Пароль</p></label>
+                    <label for="text"><input type="text" id="passwords"></label>
                     <a href="#">Забули пароль?</a>
-                    <label for="text" class="failed-password"><input type="checkbox">Запам’ятати пароль</label>
+                    <label for="remember-me" class="custom-checkbox">
+                        <input type="checkbox" id="remember-me">
+                        <span class="checkbox-mark"></span> Запам’ятати пароль
+                    </label>
+                    
                     <button>Увійти</button>
                 </form>
             </div>
