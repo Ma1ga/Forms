@@ -266,7 +266,27 @@ input.checkbox-style:checked+label::after {
     background-color: #fff;
     border: 1px solid #ccc;
 }
-
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-image: url(https://img.icons8.com/?size=100&id=vwGXRtPWrZSn&format=png&color=000000); /* шлях до вашого зображення */
+    background-repeat: no-repeat;
+    background-size: 20px; /* розмір іконки */
+    background-position: right 10px center;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-right: 40px; /* для того, щоб текст не накладався на іконку календаря */
+    appearance: none; /* вимикає стандартне оформлення */
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none;
+    display: none; /* приховує стандартну іконку календаря */
+  }
+  
+  
 .tovar {
     display: flex;
     gap: 24px;
@@ -414,7 +434,7 @@ form .gender input+label::after {
 
 .gender-main {
     display: flex;
-    column-gap: 30%;
+    column-gap: 20%;
 }
 
 .checkbox-news input+label::before {
