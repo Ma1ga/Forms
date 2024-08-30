@@ -107,7 +107,8 @@ hr {
     font-family: "Roboto";
     text-align: center;
 }
-.forms form button:hover{
+
+.forms form button:hover {
     filter: drop-shadow(2px 4px 6px green);
     transition: 0.5s;
 }
@@ -115,14 +116,16 @@ hr {
 .forms form textarea {
     resize: none;
 }
+
 .arrows select {
     appearance: none;
     width: 100%;
     background-color: transparent;
 }
+
 .arrows {
     position: relative;
-    
+
 }
 
 .arrows::before {
@@ -142,9 +145,11 @@ hr {
 .checkbox-element p {
     position: relative;
 }
-.disabled{
+
+.disabled {
     color: #b3b3b3;
 }
+
 .checkbox-element [type="checkbox"] {
     display: none;
 }
@@ -188,6 +193,7 @@ input.checkbox-style:checked+label::after {
     top: 50%;
     left: 3.5px;
 }
+
 .radio-element input[type="radio"] {
     position: relative;
     width: 15px;
@@ -266,37 +272,45 @@ input.checkbox-style:checked+label::after {
     background-color: #fff;
     border: 1px solid #ccc;
 }
+
 input[type="date"] {
     width: 100%;
     padding: 8px;
     border: none;
     border-radius: 5px;
-    background-image: url(https://img.icons8.com/?size=100&id=vwGXRtPWrZSn&format=png&color=000000); /* шлях до вашого зображення */
+    background-image: url(https://img.icons8.com/?size=100&id=vwGXRtPWrZSn&format=png&color=000000);
+    /* шлях до вашого зображення */
     background-repeat: no-repeat;
-    background-size: 20px; /* розмір іконки */
+    background-size: 20px;
+    /* розмір іконки */
     background-position: right 10px center;
     font-size: 16px;
     box-sizing: border-box;
-    padding-right: 40px; /* для того, щоб текст не накладався на іконку календаря */
-    appearance: none; /* вимикає стандартне оформлення */
-  }
-  
-  input[type="date"]::-webkit-calendar-picker-indicator {
+    padding-right: 40px;
+    /* для того, щоб текст не накладався на іконку календаря */
+    appearance: none;
+    /* вимикає стандартне оформлення */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
     background: none;
-    display: none; /* приховує стандартну іконку календаря */
-  }
-  
-  
+    display: none;
+    /* приховує стандартну іконку календаря */
+}
+
+
 .tovar {
     display: flex;
     gap: 24px;
 }
+
 .date-status {
     font-size: 14px;
     color: #b3b3b3;
     font-weight: 700;
     font-family: "Roboto";
 }
+
 .date {
     display: flex;
     align-items: center;
@@ -311,9 +325,15 @@ input[type="date"] {
     flex-direction: column;
 }
 
+.gap-gender {
+    gap: 10px;
+    display: flex;
+}
+
 .gender {
     gap: 68px;
 }
+
 input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
@@ -356,6 +376,10 @@ input[type="radio"]:checked::before {
 }
 
 .checkbox-news label {
+    font-size: 16px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
     padding-left: 60px;
 }
 
@@ -373,6 +397,10 @@ form .gender input+label::after {
 }
 
 .gender input+label {
+    font-size: 16px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
     position: relative;
     padding-left: 85px;
 }
@@ -390,6 +418,7 @@ form .gender input+label::after {
     left: 0;
     background-image: url("../img/gender.png");
 }
+
 .decor {
     font-size: 14px;
     color: #b3b3b3;
@@ -405,7 +434,10 @@ form .gender input+label::after {
     left: 0;
 
 }
+
 .gendes {
+    gap: 5px;
+    display: flex;
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
@@ -465,7 +497,7 @@ form .gender input+label::after {
     background-color: #fff;
     border-radius: 11px;
     transform: translateY(70%);
-    top: -50%;
+    top: -48%;
     left: 3px;
 }
 
@@ -487,15 +519,18 @@ table {
     margin-bottom: 35px;
     border-spacing: 15px;
 }
-table [type="file"]+label:hover{
+
+table [type="file"]+label:hover {
     filter: drop-shadow(2px 4px 6px rgb(64, 65, 64));
     transition: 0.5s;
 }
+
 table input[type="text"]:focus {
     outline: none;
     filter: drop-shadow(0 0 2.5px rgba(62, 106, 255, 0.55));
     border: 1px solid #3e6aff;
 }
+
 .email-form {
     padding: 5px;
     font-size: 14px;
@@ -503,6 +538,7 @@ table input[type="text"]:focus {
     font-weight: 400;
     font-family: "Roboto";
 }
+
 .message {
     padding: 8px 6px;
     font-size: 14px;
@@ -510,6 +546,7 @@ table input[type="text"]:focus {
     font-weight: 400;
     font-family: "Roboto";
 }
+
 table tr td input {
     width: 100%;
     padding: 10px;
@@ -562,7 +599,8 @@ table tr td button {
     font-family: "Roboto";
     text-align: center;
 }
-table tr td button:hover{
+
+table tr td button:hover {
     filter: drop-shadow(2px 4px 6px green);
     transition: 0.5s;
 }
@@ -632,6 +670,11 @@ footer .form-table-info table {
 
 }
 
+.accept-poslogi {
+    display: flex;
+    margin: 15px 0 15px 0px;
+}
+
 footer .rules input[type="checkbox"] {
     margin-right: 9px;
     display: inline;
@@ -644,16 +687,56 @@ footer .form-table-info .rules {
     font-family: "Roboto";
 }
 
+/* Стилізація для випадаючого списку */
+#country {
+    -webkit-appearance: none;
+    /* Вимикає стандартний вигляд браузера */
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    background-image: url(https://cdn.discordapp.com/attachments/1270384777169604650/1279204416402231296/image.png?ex=66d39773&is=66d245f3&hm=973e7821dfd9443e900394f3ae187dea94093c5b997e4c8b9ffd1d11d3977676&);
+    /* Підставте шлях до вашої кастомної стрілки */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+label[for="country"] {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+
+label[for="country"]::before {
+    content: '';
+    position: absolute;
+    right: 6px;
+    top: 255%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+}
+
 .acceptance-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.acceptance-form .cancel button:hover{
+
+.acceptance-form .cancel button:hover {
     filter: drop-shadow(2px 4px 6px rgb(64, 65, 64));
     transition: 0.5s;
 }
-.acceptance-form .accept button:hover{
+
+.acceptance-form .accept button:hover {
     filter: drop-shadow(2px 4px 6px green);
     transition: 0.5s;
 }
@@ -709,10 +792,12 @@ footer .fix-form {
     padding: 25px;
     background-color: #fafafa;
 }
+
 .failed-password {
     gap: 10px;
     display: flex;
 }
+
 footer .fix-form p {
     font-size: 13px;
     color: #b3b3b3;
@@ -735,10 +820,12 @@ footer .fix-form-main a {
     font-weight: 400;
     font-family: "Roboto";
 }
+
 footer .fix-form-main a:hover {
     filter: drop-shadow(2px 4px 6px);
     transition: 0.3;
 }
+
 footer .fix-form button {
 
     border: none;
@@ -760,6 +847,7 @@ footer form {
     width: 330px;
     border: 1px solid #e6e6e6;
 }
+
 /* Приховуємо стандартний чекбокс */
 .custom-checkbox input[type="checkbox"] {
     position: absolute;
@@ -787,7 +875,7 @@ footer form {
 }
 
 /* Стиль галочки при активному чекбоксі */
-.custom-checkbox input[type="checkbox"]:checked + .checkbox-mark {
+.custom-checkbox input[type="checkbox"]:checked+.checkbox-mark {
     background-color: #3e6aff;
     border-color: #3e6aff;
 }
@@ -807,10 +895,11 @@ footer form {
 }
 
 /* Відображаємо галочку при активному чекбоксі */
-.custom-checkbox input[type="checkbox"]:checked + .checkbox-mark::after {
+.custom-checkbox input[type="checkbox"]:checked+.checkbox-mark::after {
     display: block;
 }
-.fix-form-main .fix-form button:hover{
+
+.fix-form-main .fix-form button:hover {
     filter: drop-shadow(2px 4px 6px green);
     transition: 0.5s;
 }
