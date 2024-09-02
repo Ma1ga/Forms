@@ -109,7 +109,8 @@ hr {
 }
 
 .forms form button:hover {
-    filter: drop-shadow(2px 4px 6px green);
+    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+    background-color: #07be51;
     transition: 0.5s;
 }
 
@@ -184,14 +185,14 @@ label:after {
 
 input.checkbox-style:checked+label::after {
     content: "";
-    height: 6px;
-    width: 8px;
+    height: 3px;
+    width: 6px;
     border-bottom: 2px solid #244dd7;
     border-left: 2px solid #244dd7;
     transform: translateY(-80%) rotate(-45deg);
     position: absolute;
     top: 50%;
-    left: 3.5px;
+    left: 4.5px;
 }
 
 .radio-element input[type="radio"] {
@@ -272,6 +273,9 @@ input.checkbox-style:checked+label::after {
     background-color: #fff;
     border: 1px solid #ccc;
 }
+.daters {
+    padding: 0;
+}
 
 input[type="date"] {
     width: 100%;
@@ -314,7 +318,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .date {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 17px;
 }
 
 /* element02 end */
@@ -342,7 +346,8 @@ input[type="radio"] {
     width: 20px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid #999;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     outline: none;
     cursor: pointer;
     padding: 6px;
@@ -350,7 +355,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    border: 2px solid #1E90FF;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
 }
 
 input[type="radio"]:checked::before {
@@ -477,7 +483,6 @@ form .gender input+label::after {
     left: 0;
     width: 45px;
     height: 25px;
-    border: 1px solid #cfcfd1;
     border-radius: 50px;
     background-color: #cfcfd1;
     transition: 0.5s;
@@ -497,7 +502,7 @@ form .gender input+label::after {
     background-color: #fff;
     border-radius: 11px;
     transform: translateY(70%);
-    top: -48%;
+    top: -54%;
     left: 3px;
 }
 
@@ -521,8 +526,9 @@ table {
 }
 
 table [type="file"]+label:hover {
-    filter: drop-shadow(2px 4px 6px rgb(64, 65, 64));
-    transition: 0.5s;
+    filter: drop-shadow(0px 2px 2.5px rgba(15,40,126,0.35));
+    background-color: #2857f4;
+
 }
 
 table input[type="text"]:focus {
@@ -601,8 +607,10 @@ table tr td button {
 }
 
 table tr td button:hover {
-    filter: drop-shadow(2px 4px 6px green);
+    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+    background-color: #07be51;
     transition: 0.5s;
+
 }
 
 
@@ -732,13 +740,16 @@ label[for="country"]::before {
 }
 
 .acceptance-form .cancel button:hover {
-    filter: drop-shadow(2px 4px 6px rgb(64, 65, 64));
+    background-color: #85868d;
+    color: #fff;
     transition: 0.5s;
 }
 
 .acceptance-form .accept button:hover {
-    filter: drop-shadow(2px 4px 6px green);
+    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+    background-color: #07be51;
     transition: 0.5s;
+
 }
 
 .cancel label button {
@@ -822,7 +833,9 @@ footer .fix-form-main a {
 }
 
 footer .fix-form-main a:hover {
-    filter: drop-shadow(2px 4px 6px);
+    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+    color: #3e6aff;
+    text-decoration: underline;
     transition: 0.3;
 }
 
@@ -868,7 +881,7 @@ footer form {
     width: 15px;
     height: 15px;
     background-color: #f0f0f0;
-    border: 2px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     margin-right: 8px;
     transition: background-color 0.2s, border-color 0.2s;
@@ -885,10 +898,10 @@ footer form {
     content: "";
     position: absolute;
     display: none;
-    left: 1px;
-    top: -2px;
-    width: 6px;
-    height: 10px;
+    left: 4px;
+    top: 2px;
+    width: 3px;
+    height: 6px;
     border: solid white;
     border-width: 0 2px 2px 0;
     transform: rotate(35deg);
@@ -900,8 +913,10 @@ footer form {
 }
 
 .fix-form-main .fix-form button:hover {
-    filter: drop-shadow(2px 4px 6px green);
+    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+    background-color: #07be51;
     transition: 0.5s;
+
 }
 
 
