@@ -131,7 +131,9 @@ hr {
 }
 
 .arrows::before {
+
     content: "";
+    pointer-events: none;
     z-index: 1;
     position: absolute;
     top: 50%;
@@ -639,6 +641,7 @@ table input[type="radio"] {
 
 /* table 05 */
 
+
 footer .form-table-info p {
     margin-bottom: 22px;
     font-size: 18px;
@@ -692,6 +695,7 @@ footer .rules input[type="checkbox"] {
 }
 
 footer .form-table-info .rules {
+    position: relative;
     font-size: 14px;
     color: #1f222c;
     font-family: "Roboto";
@@ -730,7 +734,7 @@ label[for="country"] {
 label[for="country"]::before {
     content: '';
     position: absolute;
-    right: 6px;
+    right: 10px;
     top: 255%;
     transform: translateY(-50%);
     pointer-events: none;
@@ -749,13 +753,16 @@ label[for="country"]::before {
     transition: 0.5s;
 }
 
-.acceptance-form .accept button:hover {
+.acceptanceform .accept button:hover {
     filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
     background-color: #07be51;
     transition: 0.5s;
 
 }
 
+.saves {
+    position: relative;
+}
 .cancel label button {
     border: 1px solid #85868d;
     padding: 15px;

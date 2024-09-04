@@ -188,7 +188,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><label for="country">Країна</label>
+                                <td><label for="country" class="arrows">Країна</label>
                                     <label for="" >
                                         <select name="" id="country">
                                             <option value="">Індонезія</option>
@@ -211,9 +211,9 @@
                                     <label for=""><input type="text" id="poshta-index"></label>
                                 </td>
                             </tr>
-                            <tr class="accept-poslogi">
-                                <td colspan="3"><label class="rules" for="accepts"><input type="checkbox" id="accepts">Я погоджуюсь з
-                                        правилами оплати та доставки товару</label></td>
+                            <tr class="accept-poslogi checkbox-element">
+                                <td colspan="3"><input class="checkbox-style" type="checkbox" id="accepts"><label for="accepts" class="rules">Я погоджуюсь з правилами оплати та доставки товару</label>
+                                </td>
                             </tr>
                             <tr>
                                 <td colspan="3">
@@ -243,10 +243,11 @@
                     <label for="passwords"><p>Пароль</p></label>
                     <label for="text"><input type="text" id="passwords"></label>
                     <a href="#">Забули пароль?</a>
-                    <label for="remember-me" class="custom-checkbox">
-                        <input type="checkbox" id="remember-me">
-                        <span class="checkbox-mark"></span> Запам’ятати пароль
-                    </label>
+                    <div class="checkbox-element">
+
+                        <input class="checkbox-style" type="checkbox" id="save"><label for="save" class="saves">Запам’ятати пароль</label>
+                    </div>
+                    
                     
                     <button>Увійти</button>
                 </form>
