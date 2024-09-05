@@ -678,6 +678,7 @@ footer input[type="text"]:focus {
 }
 
 footer .form-table-info table {
+    margin: -6px;
     border-spacing: 9px;
     width: 100%;
 
@@ -703,19 +704,17 @@ footer .form-table-info .rules {
 .pad {
     padding: 9px;
 }
-/* Стилізація для випадаючого списку */
+
 #country {
     -webkit-appearance: none;
-    /* Вимикає стандартний вигляд браузера */
     -moz-appearance: none;
     appearance: none;
-    padding: 8px;
+    padding: 8.6px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
     background-image: url(https://cdn.discordapp.com/attachments/1270384777169604650/1279204416402231296/image.png?ex=66d39773&is=66d245f3&hm=973e7821dfd9443e900394f3ae187dea94093c5b997e4c8b9ffd1d11d3977676&);
-    /* Підставте шлях до вашої кастомної стрілки */
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 10px;
